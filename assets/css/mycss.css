@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+body {
+    background: linear-gradient(90deg, #8870FF 0%, #fff 100%);
+    font-family: Raleway, serif;
+}
+
+p {
+    color: black;
+}
+
+.nav-link {
+    color: rgb(145, 145, 145);
+}
+
+.navbar-nav .nav-link.active {
+    color: #8870FF;
+} 
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(145, 145, 145);
+}
+
+.sidebar {
+    color: rgb(145, 145, 145);
+    background-color: linear-gradient(270deg, #8870FF 0%, #fff 100%);
+}
+
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: white ;
+}
+
+.slide-text,
+.footer-text {
+    color: black;
+    margin: auto auto; 
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+footer {
+    background: linear-gradient(90deg, rgb(116, 112, 255) 0%, rgb(227, 227, 227) 100%);
+}
+
+
+.foot-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.foot-img>img {
+    width: 2.5em;
+    
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
